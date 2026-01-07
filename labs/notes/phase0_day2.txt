@@ -1,0 +1,18 @@
+Phase: 0
+Day: 2
+Date: 01/06/2026
+
+What is a virtual machine?
+A software based computer that runs inside a host operating system and share's host hardware resources
+
+What is ubuntu?
+Linux OS
+
+What does sudo do?
+Gives admin privileges
+
+What did update.sh automate?
+It updated the OS system and upgrade the OS system packages using a single command 
+
+What problem does automation solve?
+Removes repetitive tasks, saves time, and redues human error

@@ -1,0 +1,18 @@
+Phase: 0
+Day: 3
+Date: 01/07/2026
+
+Objective
+Understand basic VM networking, including NAT and Host-only networking, and verify IP connectivity.
+
+Concepts Learned
+What is NAT? 
+Network Address Translation allows devices with private IP address to access the internet by translating their traffic to use the host's public
+IP address
+
+What is Host-only networking?
+It created a private network between the host machine and the virtual machine that does not have direct internet access.
+
+Why do we need both?
+We use both the NAT and Host-only networking so the virtual machine can access the internet while also allowing direct communication with the host
+system for lab testing and troubleshooting. 
