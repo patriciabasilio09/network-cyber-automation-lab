@@ -1,0 +1,76 @@
+Phase: 1
+Day: 2
+Topic: Network Interfaces, DHCP, and Troubleshooting
+Date: 01/09/2026
+
+Objective 
+Understand how Linux handles multiple network interfaces, how DHCP assigns IP addresses, and how to troubleshoot persistent network configuration issues using NetworkManager.
+
+Lab Envrionment
+- VM OS: Ubuntu
+- Hypervisor: VirtualBox
+- Network Adapters:
+	Adapter 1: NAT
+	Adapter 2: Host-only
+
+Tasks Performed
+- Identifed active network interfaces
+- Verified connectivity using ping
+- Disconnected and reconnected interfaces to observe behavior
+- Reverted a mistakenly applied static IP configuration
+- Investigated persistent multiple IPv4 addresses
+- Removed and recreated NetworkManager connection profiles
+- Verified clean DHCP-based configuration
+
+Issues Enforced
+After reverting a static IP configuration, the Host-only interface continued to show 2 IPv4 addresses. This persisted across interface resets.
+
+Root Cause
+A single NetworkManager connection profile was shared across multiple interfaces. The static IP settings remined stored in the connection profile, causing the address to be reapplied even after flushing the interface
+
+Resolution
+- Identified the shared NetworkManager connection profile
+- Deleted the affected connection profile
+- Restarted NetworkManager
+- Allowed Ubuntu to recreate clean DHCP-based profiles
+- Verified that each interface had exactly one Ipv4 address
+
+Verification
+- ip -4 addr show confirmed one IPv4 address per interface
+- NAT interface retained internet access
+- Host-only interface retained host-to-VM connectivity
+
+Key Concepts Learned
+- Difference between runtime network state and persistent configuration
+- How NetworkManager connection profiles work
+- Linux supports multiple IP addresses per interface
+- Importance of verification after configuration changes
+- Safe rollbaack and recovery techniques
+
+Questions and Reflections
+1. Why did the VM still have internet access after one interface was disconnected?
+Because the VM had multiple active network interfaces. When one interface was disconnected, traffic automatically continued through the remaining active interface.
+
+2. Why did one interface show two IPv4 addresses? 
+Linux allows multiple IPv4 addresses to be assigned to a single interface.
+
+3. Why didn't flushing the interface immediately removed the extra IP permanently?
+Flushing the interface removed runtime addresses, but NetworkMAnager reapplied the saved configuration fromt he connection profile. Persistent settings must be removed from the profile itself.
+
+4. What was the root cause of the persistent static IP?
+A shred NetworkManager connection profile was bound to umtiple interfaces.
+
+5. How was the issue permanently resolved?
+The affected NetworkManager connection profile was deleted and NetworkManager was restarted. Ubuntu then recreated clean DHCP-based profiles, resulting in one IPv4 address per interface.
+
+6. Why is it important to verify network state instead of assuming changes worked?
+Beacuse network tools may show partial or misleading results. Verification ensures configuration changes behaved as expected and prevents hidden issues from persisting. 
+
+7. Is having multiple IP addresses in one interface inherently dangerous?
+No
+
+8. What professional skill did this lab primarily develop?
+Structured trobuleshooting: observing behavior, identifying root cause, applying a controlled fix, and verifying the result instead of reinstalling or guessing. 
+
+Outcome
+The system was restored to a clean, stable networking state with DHCP enabled on all interfaces. The lab environment is ready for future networking and security exercises.

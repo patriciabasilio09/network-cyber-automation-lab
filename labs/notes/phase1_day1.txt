@@ -1,0 +1,21 @@
+Phase: 1
+Day: 1
+Date: 01/8/2026
+
+What is an IP address in your own words?
+A unique address that identifies a device on a network so they can communicate
+
+What command is used to check IP address for the VM?
+ip a
+
+What is a default gateway?
+The device that routes traffic from the local network to other networks in the internet
+
+What command is used to check default gateway?
+ip route
+
+Why does my VM have a different IP than my host?
+The VM is on a virtual NAT network while the host is on the local home network
+
+What did NAT allow today?
+It allowed the VM to access the internet using a private IP address without being exposed
