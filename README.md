@@ -38,30 +38,26 @@ labs/
 
 ## What I Am Learning
 
-Linux fundamentals and command-line usage
-
-Virtual machines and virtualization concepts
-
-Networking basics (IP addressing, NAT, host-only networking)
-
-Bash scripting and task automation
-
-Git and GitHub for version control and documentation
-
-Cybersecurity fundamentals (later phases)
+- Linux fundamentals and command-line usage
+- Virtual machines and virtualization concepts
+- Networking basics (IP addressing, NAT, host-only networking)
+- Bash scripting and task automation
+- Git and GitHub for version control and documentation
+- Cybersecurity fundamentals (later phases)
+- Networking troubleshooting using Linux tools (ip, nmcli, ping)
 
 ## Current Progress
 
-Phase 0: Environment setup and foundations
-
-Ubuntu VM setup
-
-Networking configuration
-
-First automation script
-
-GitHub repository initialized
-
+### Phase 0: Environment setup and foundations
+- Ubuntu VM setup
+- Networking configuration
+- First automation script
+- GitHub repository initialized
+  
+### Phase 1: Networking Fundamentals
+- Day 1: IP addressing, interfaces, and basic connectivity
+- Day 2: DHCP, static IP configuration, and network troubleshooting
+  
 ## Next Steps
 
 Expand networking labs
