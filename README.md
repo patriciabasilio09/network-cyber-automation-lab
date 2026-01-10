@@ -57,7 +57,8 @@ labs/
 ### Phase 1: Networking Fundamentals
 - Day 1: IP addressing, interfaces, and basic connectivity
 - Day 2: DHCP, static IP configuration, and network troubleshooting
-  
+- Day 3: Subnets, routing logic, and gateway behavior
+    
 ## Next Steps
 
 Expand networking labs
