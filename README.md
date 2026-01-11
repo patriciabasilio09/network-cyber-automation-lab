@@ -49,15 +49,16 @@ labs/
 ## Current Progress
 
 ### Phase 0: Environment setup and foundations
-- Ubuntu VM setup
-- Networking configuration
-- First automation script
-- GitHub repository initialized
+✔ Ubuntu VM setup  
+✔ Networking configuration  
+✔ First automation script  
+✔ GitHub repository initialized
   
 ### Phase 1: Networking Fundamentals
-- Day 1: IP addressing, interfaces, and basic connectivity
-- Day 2: DHCP, static IP configuration, and network troubleshooting
-- Day 3: Subnets, routing logic, and gateway behavior
+✔ Day 1 – IP addressing basics  
+✔ Day 2 – Network interfaces and connectivity  
+✔ Day 3 – Routing and gateways  
+✔ Day 4 – Subnetting, CIDR, and usable IPs
     
 ## Next Steps
 
