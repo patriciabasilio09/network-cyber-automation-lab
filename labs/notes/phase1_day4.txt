@@ -1,0 +1,53 @@
+Phase: 1
+Day: 4
+Topic: Subnet MAsks, CIDR, Usable Hosts
+Date: 01/11/2026
+
+Objective:
+What I am learning today and why subnetting is important
+
+Key Concepts
+What is CIDR?
+CIDR shows how many bits of an IP address are used for the network. For example, /24, /26, or /28 tells us how large the network is and how many IPs are available for hosts.
+
+What does subnetting mean?
+Subnetting means dividing one large network into smaller networks. 
+
+Why do we use subnetting?
+We use subnetting to control network traffic, reduce broadcast noise, improve organization, and increase security. 
+
+CIDR Calculations
+
+Formula: 
+Total IPs = 2^(32-CIDR)
+Usable IPs = Total -2
+
+CIDR	Host Bits	Totals IPs	Usable IPs
+/24	8		256		254
+
+/26	6		64		62
+
+/28	4		16		14
+
+/30	2		4		2
+
+
+Questions:
+
+1. What does /26 means?
+/26 means the first 26 bits identify the network and only 6 bits are left for devices, giving 64 total IPs and 62 usable.
+
+2. How many usable IPs does /26 have?
+Usable IPs is 62
+
+3. What does /28 mean?
+/28 means the first 28 bits identify the network and only 4 bits are left for devices, giving 16 total IPs and 14 usable.
+
+4. Why does increasing CIDR make the subnet smaller?
+Because more bits are being used for the network portion, leaving fewwer bits available for host addresses. Fewer host bits means fewer possible IPs, so the subnet becomes smaller.
+
+5. Why are .0 and .255 reserved?
+.0 is reserved for the network address, which identifies the subnet itself. While .255 is reserved for the broadcast address, which is used to send data to all devices in the subnet at once.
+
+6. Why is subnetting important in real networks?
+SUbnetting is important because it helps organize networks, reduce unnecessary traffic, improves performance, and increase security by seperating devices into smaller groups.

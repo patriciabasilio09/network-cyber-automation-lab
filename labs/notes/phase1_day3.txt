@@ -1,0 +1,32 @@
+Phase: 1
+Day: 3
+Topic: Subnets and Routing Logic
+Date: 01/10/2026
+
+What is a subnet?
+A subnet is a smaller network created from a larger network to organize and manage devices more efficiently.
+
+Why do we need subnets?
+Subnet group devicesso they can communicate with each other without going through the gaetway. They help organize networks, reduce unnecessary traffic, and improve performance and security.
+
+Why can't .0 be used?
+.0 is reserved as the network address, which represents the entire subnet.
+
+Why can't .255 be used?
+.255 is reserved as the broadcast address, which is used to send data to all devices in the subnet.
+
+How does my computer decide:
+-Local traffic?
+Local traffic is sent directly to the destination device because it is in the same subnet.
+
+- Remote traffic?
+Remote traffic is sent to the default gateway so it can be routed to another network
+
+What does ip route show?
+ip route shows the routing table, including which networks are reachable and what the default gateway is.
+
+What did "ip route get 8.8.8.8" tell me?
+It shows which gateway and interface will be used to send traffic to 8.8.8.8
+
+What would break if the gateway was missing?
+Without the gateway, the system would not be able to communicate with any devices outside its subnet, including the internet.
