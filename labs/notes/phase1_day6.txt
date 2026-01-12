@@ -1,0 +1,43 @@
+Phase: 1
+Day: 6
+Topic: IP Address Planning and Validation
+
+What is IP planning?
+IP planning is the organized design and assignment of IP addresses to devices on a network.
+
+Why is IP planning important?
+IP planning prevents problems before they happen. It avouds IP conflicts, makes troubleshooting easier, keeps the network stable, and ensures important devices always use the same address.
+
+EXample IP Plan for a small network:
+
+Network: 192.168.10.0/24
+
+Router/Gateway: 192.168.10.1
+Servers: 192.168.10.10 - 192.168.10.30
+Printers: 192.168.10.40 - 192.168.10.50
+Worstations: 192.168.10.100 - 192.168.10.200
+DHCP Pool: 192.168.10.150 - 192.168.10.200
+
+Why this layout makes troubleshooting easier:
+Routers and gateways are always given the first usable IP, which makes them easy to remember. Servers are given low IP numbers because they are critical systems that must always be reachable. Printers use fixed and easy to remember IPs because their addresses should not change. Workstations use a middle range because they are user devices and usually receive IPs from DHCP. The DHCP pool is placed in a higher range to keep automatic addresses seperated from static ones and prevent IP conflicts.
+
+What problems happen if IPs are randomnly assigned:
+Random IP assignment causes confusion, makes troubleshooting harder, increases the risk of IP conflicts, and makes devices difficult to identify.
+
+Script: network_summary.sh
+
+Purpose: 
+This script provides a quick summary of the system's network configuration.
+
+What it shows:
+- All IPv4 addresses on the system
+- The default gateway
+- All active network connections and their interfaces
+
+Why it is useful:
+This script saves time when troubleshooting network problems.
+It quickly confirms whether the system is using a static or dynamic IP and shows which interfaces are currently active.
+
+Command explanation:
+The command "nmcli -t -f NAME,DEVICE,TYPE con show --active" displays only the active network connections in a clean format. It shows the connection name, the device being used, and the connection type, making it easy to identify which interfaces are currently active.
+
