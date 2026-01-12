@@ -58,8 +58,9 @@ labs/
 ✔ Day 1 – IP addressing basics  
 ✔ Day 2 – Network interfaces and connectivity  
 ✔ Day 3 – Routing and gateways  
-✔ Day 4 – Subnetting, CIDR, and usable IPs
-    
+✔ Day 4 – Subnetting, CIDR, and usable IPs  
+✔ Day 5 – Subnet calculations (network, broadcast, usable ranges)
+
 ## Next Steps
 
 Expand networking labs
