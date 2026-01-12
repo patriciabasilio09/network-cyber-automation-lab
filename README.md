@@ -59,8 +59,19 @@ labs/
 ✔ Day 2 – Network interfaces and connectivity  
 ✔ Day 3 – Routing and gateways  
 ✔ Day 4 – Subnetting, CIDR, and usable IPs  
-✔ Day 5 – Subnet calculations (network, broadcast, usable ranges)
+✔ Day 5 – Subnet calculations (network, broadcast, usable ranges)  
+✔ Day 6 – IP planning and network automation
 
+## Automation
+
+- network_summary.sh  
+  A Bash script that displays:
+  - All IPv4 addresses
+  - The default gateway
+  - Active network connections and interfaces  
+
+   This script is used to quickly validate network configuration and speed up troubleshooting.
+  
 ## Next Steps
 
 Expand networking labs
