@@ -1,0 +1,36 @@
+Phase: 1
+Day: 5
+Topic: Subnet CAlculations (Network, Broadcast, Usable IPs)
+Date: 01/12/2026
+
+Objective:
+Learn how to calculate subnets manually by finding block size, network address, broadcast address, and usable IP ranges.
+
+
+Method:
+1. FInd the subnet mask from CIDR
+2. Calcualte block size: 256 - last octect of the subnet mask
+3. For each subnet:
+    - Network = starting address
+    - Broadcast = next subnet start -1
+    - Usable = between network and broadcast
+
+EXample: /26 subnet
+
+Network: 192.168.10.0/26
+Subnet Mask: 255.255.255.192
+Block size: 256 - 192 = 64
+
+Subnet		Network Address		Broadcast Address	Usable Range
+1		192.168.10.0		192.168.10.63		.1-.62
+2		192.168.10.64		192.168.10.127		.65-.126
+3		192.168.10.128		192.168.10.191		.129-.190
+4		192.168.10.192		192.168.10.255		.193-.254
+
+Verification
+
+Command used:
+ipcalc 192.168.10.10/26
+
+Summary:
+Today I learned how to manually calculate subnets by finding the block size and using it to determine network address, broadcast addresses, and usable IP ranges. I can now split networks using CIDR and design subnets based on real host requirements.
