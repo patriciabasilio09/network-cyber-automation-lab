@@ -60,7 +60,8 @@ labs/
 ✔ Day 3 – Routing and gateways  
 ✔ Day 4 – Subnetting, CIDR, and usable IPs  
 ✔ Day 5 – Subnet calculations (network, broadcast, usable ranges)  
-✔ Day 6 – IP planning and network automation
+✔ Day 6 – IP planning and network automation  
+✔ Day 7 – ARP, MAC addresses, and packet flow basics
 
 ## Automation
 
