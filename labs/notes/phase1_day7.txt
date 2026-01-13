@@ -1,0 +1,34 @@
+Phase: 1
+Day: 7
+Date: 01/13/2026
+
+Topic: ARP and Packet Flow Basics
+
+What is ARP?
+ARP (Address Resolution Protocol) is used to find the MAC address that belongs to an IP address on the local network.
+
+What is a MAC address?
+A MAC address is a unique hardware address assigned to a network interface. It is used to deliver data at the Ethernet level.
+
+Difference between IP and MAC:
+IP address = logical address used for routing and identification on a network.
+MAC address = physical address used for local network delivery.
+
+What happens when I ping a device on my subnet?
+My computer sends an ARP broadcast asking for the MAC address of the target IP. Once the MAC is known, packets are sent directly to that device.
+
+What happens when I ping a device outside my subnet?
+My computer sends traffic to the default gateway. It first uses ARP to find the MAC address of the gateway, then sends the packet to the router.
+
+What does "ip neigh" show?
+It shows the ARP table, which maps IP addersses to MAC addresses that my system has learned. 
+
+Why is ARP a broadcast?
+Because the sender does not yet know the MAC address, it must ask all devices on the subnet.
+
+Why does subnet size matter?
+Larger subnets create more broadcast traffic, which slows down the network and increases unnecessary processing.
+
+Security note: Why ARP can be abused:
+ARP has no authentication, so attackers can send fake ARP replies to redirect traffic also known as ARP spoofing. 
+
