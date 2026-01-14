@@ -1,0 +1,27 @@
+Phase: 1
+Day: 8
+Date: 01/14/2026
+
+Topic: Routing Decisions and Traffic Paths
+
+What is routing table?
+A routing table tells the system where to send traffic based on destination IPs.
+
+What is a default route?
+The default route is used when no more specific route exists. It usually points to the gateway.
+
+What does "ip route" show?
+It shows all routing rules the system uses.
+
+What does "ip route <IP>" show?
+It shows exactly which route, interface, and gateway will be used for a destination IP.
+
+Explain longest prefix match:
+The syste, chooses the most specific route that matches the destination IP.
+
+How routing and ARP work together:
+Routing decides where traffic should go.
+ARP resolves the MAC address of the next hop.
+
+Why routing knowledge matters for security: 
+Understanding routing helps detect abnormal traffic paths, misconfigurations, and possible attacks.
