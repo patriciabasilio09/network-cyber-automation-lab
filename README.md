@@ -62,6 +62,7 @@ labs/
 ✔ Day 5 – Subnet calculations (network, broadcast, usable ranges)  
 ✔ Day 6 – IP planning and network automation  
 ✔ Day 7 – ARP, MAC addresses, and packet flow basics
+✔ Day 8 – Routing vs ARP (how Linux decides where traffic goes and who receives it)
 
 ## Automation
 
