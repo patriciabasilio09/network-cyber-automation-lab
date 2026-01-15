@@ -91,7 +91,9 @@ This diagram shows the final architecture built during Phase 1, including:
 - Host-only interface
 - Gateway and routing flow
 
-![Phase 1 Network Diagram](./diagrams/network_topology_phase1.png)
+<p align="center">
+  <img src="/labs/diagrams/network_topology_phase1.png" alt="Phase 1 Network Diagram">
+</p>
   
 ## Next Steps
 
