@@ -1,0 +1,20 @@
+Phase: 1
+Day: 9
+Date: 01/15/2026
+
+Topic: Route Selection Logic
+
+1. Result of: "ip route get 8.8.8.8". Why did 8.8.8.8 use the default route?
+Traffic to 8.8.8.8 uses the default route because it is not part of any local network. The defaukt route is used when no more specific route exists.
+
+2. Results of: "ip route get <host-only ip>". Why did the host-only IP use the host-only interface?
+Traffic to the host-only IP uses the local interface because it is in the same subnet. Local traffic always uses the directly connected interface. 
+
+3. What is route metric?
+A route metric is a cost value assigned to a route.
+
+4. When is metric used?
+Metric is used only when two routes have the same destination network and the same prefix length. The route with the lowest metric is chosen.
+
+Summary:
+Linux selects routes by choosing the most specific match first, and if there is a tie, it selects the route with the lowest metric. 
