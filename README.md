@@ -61,8 +61,9 @@ labs/
 ✔ Day 4 – Subnetting, CIDR, and usable IPs  
 ✔ Day 5 – Subnet calculations (network, broadcast, usable ranges)  
 ✔ Day 6 – IP planning and network automation  
-✔ Day 7 – ARP, MAC addresses, and packet flow basics
-✔ Day 8 – Routing vs ARP (how Linux decides where traffic goes and who receives it)
+✔ Day 7 – ARP, MAC addresses, and packet flow basics  
+✔ Day 8 – Routing vs ARP (how Linux decides where traffic goes and who receives it)  
+✔ Day 9 – Route selection logic (default route, host-only routing, metrics)  
 
 ## Automation
 
