@@ -3,3 +3,5 @@
 .gnupg/
 .local/
 .ssh/
+.*
+snap/
