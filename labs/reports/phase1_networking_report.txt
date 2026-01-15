@@ -1,0 +1,28 @@
+Phase 1 - Networking Fundamentals Report
+
+This phase focused on understanding how networking works at a foundational level.
+
+Topics convered:
+- IP addressing and private vs public IPs
+- NAT and Host-only networking
+- Subnetting and CIDR
+- Routing tables and default fateways
+- ARP and packet delivery
+- Route selection logic and metrics
+- IP planning and logical network design
+- Basic network troubleshooting
+
+Whta I learned:
+I learned how a system decides where to send traffic, how networks are structured, and how routing, addressing, and ARP work together to make communication possible.
+
+I can now:
+- Identify and explain IP addresses and interfaces
+- Explain how NAT and Host-only networking work
+- Calculate subnet sizes and usable IP ranges
+- Read and interpret routing tables 
+- Predict packet flow for local and remote traffic
+- Design a basic IP plan for small network 
+- Use Linux tools to troubleshoot connectivity
+
+How This Prepares Me:
+This phase prepapres me for security work by giving me a strong understanding of how normal network traffic flows, which is required before detecting malicious behaviour. 
