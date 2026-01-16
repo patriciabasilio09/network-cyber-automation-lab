@@ -45,16 +45,16 @@ labs/
 
 ## Current Progress
 
-### Phase 0: Environment setup and foundations
+### Phase 0: Environment setup and foundations 
 ✔ Ubuntu VM setup  
 ✔ Networking configuration  
 ✔ First automation script  
 ✔ GitHub repository initialized
   
-### Phase 1: Networking Fundamentals (COMPLETED)
-✔ Day 1 – IP addressing basics  
-✔ Day 2 – Network interfaces and connectivity  
-✔ Day 3 – Routing and gateways  
+### Phase 1 – Networking Fundamentals (Completed)
+✔ Day 1 – IP addressing basics   
+✔ Day 2 – Network interfaces and connectivity   
+✔ Day 3 – Routing and gateways    
 ✔ Day 4 – Subnetting, CIDR, and usable IPs  
 ✔ Day 5 – Subnet calculations (network, broadcast, usable ranges)  
 ✔ Day 6 – IP planning and network automation  
@@ -63,16 +63,30 @@ labs/
 ✔ Day 9 – Route selection logic (default route, host-only routing, metrics)  
 ✔ Day 10 – Capstone review, documentation, and diagram
 
+### Phase 2: Security Monitoring & Log Analysis
+
+✔ Day 1 – Introduction to logs and Linux logging system  
+✔ Day 2 – Log filtering, grep, awk, and pattern matching  
+✔ Day 3 – SSH log analysis and attack detection automation
+
 ## Automation
 
 Scripts in this repository are used to automate common networking and troubleshooting tasks.
+- log_analyzer.sh  
+  Analyzes `/var/log/auth.log` to:
+  - Find failed SSH login attempts  
+  - Extract source IPs  
+  - Count and rank the most frequent attackers
+       
+  This simulates basic SIEM-style detection logic.
 
 - network_summary.sh  
   Displays:
   - All IPv4 addresses
   - The default gateway
-  - Active network connections and interfaces  
- Used to quickly validate network configuration and speed up troubleshooting.
+  - Active network connections and interfaces
+     
+   Used to quickly validate network configuration and speed up troubleshooting.
 
 - show_ips.sh  
   Displays all active IP addresses and network interfaces in a clean format.  
@@ -94,6 +108,17 @@ This diagram shows the final architecture built during Phase 1, including:
 <p align="center">
   <img src="/labs/diagrams/network_topology_phase1.png" alt="Phase 1 Network Diagram">
 </p>
+
+  ## Skills Demonstrated
+
+- Linux system administration  
+- Network configuration and troubleshooting  
+- Understanding of routing, ARP, and packet flow  
+- Log analysis and event filtering  
+- Basic intrusion detection concepts  
+- Bash scripting and automation  
+- Git/GitHub workflow (version control, documentation)  
+- Security-focused thinking (detection, validation, and verification)
   
 ## Next Steps
 
