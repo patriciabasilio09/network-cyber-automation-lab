@@ -12,7 +12,7 @@ Topics convered:
 - IP planning and logical network design
 - Basic network troubleshooting
 
-Whta I learned:
+What I learned:
 I learned how a system decides where to send traffic, how networks are structured, and how routing, addressing, and ARP work together to make communication possible.
 
 I can now:

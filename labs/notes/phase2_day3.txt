@@ -1,0 +1,30 @@
+Phase: 2
+Day: 3
+Date: 01/16/2026
+
+Topic: Log Analysis & Mini SIEM Automation
+
+What is log analysis?
+Log analysis is examning system logs to detect suspicious activity, failures, or security threats.
+
+What is auth.log?
+auth.log records authentication activity such as SSH logins, sudo usage, and failed login attempts.
+
+What problem are we solving?
+We want to identify which IP addresses are attempting failed SSH logins the most.
+
+Why not push auth.log to Github?
+Because it contains sensitive system data. Only scripts and nores are shared, never real logs.
+
+What does our script do?
+It:
+- Searches for SSH failed login attempts
+- Extracts IP addresses only
+- Counts how many times each IP appears
+- Shows the top attackers
+
+Why use pattern matching instead of field numbers?
+Because logs are messy and field positions change. Pattern matching is reliable and professional. 
+
+What does this simulate?
+This simulates how a SIEM detects brute-force attacks and repeated authentication failures.

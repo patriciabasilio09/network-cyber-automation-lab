@@ -1,0 +1,23 @@
+Phase: 2
+Day: 2
+Date: 01/16/2026
+
+Topic: Exploring and Reading Linux Logs
+
+1. Where are Linux logs stored?
+Most Linux logs are stored in the /var/log/ directory. This folder contains system, authentication, kernel, and application logs.
+
+2. What is syslog?
+syslog is the main system log file. It records general system activity such as service starts, error, network events, and background processes.
+3. What is auth.log?
+auth.log records authentication-related events. This includes user logins, failed login attempts, sudo usage, and session creation and termination. This is one of the most important files for security monitoring.
+4. What does grep do?
+grep searches for specific words or patterns inside files. It is used quickly to find important events like failed logins, errors, and suspicious activity.
+5. What does tail do?
+tail shows the last lines of a file. It is used to see most recent events.
+6. What does tail if do?
+tail -f shows new log entries in real time as they happen.
+7. Why is auth.log important in cybersecurity? 
+Because it shows who tried to log in, who failed, who used admin privileges, and possilbe brute-force attacks.
+8. What did Iobserve today?
+I learned how to navigate to /var/log, read logs using less, search logs using grep, monitor logs live using tail -f, and understand the structure of log entries. 
