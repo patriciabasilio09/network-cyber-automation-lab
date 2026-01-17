@@ -1,0 +1,29 @@
+Phase: 2
+Day:4
+Date: 01/17/2026
+
+Topic: Detection Logic & Threshold
+
+What is a detection rule?
+A detection rule defines when normal activity becomes suspicious and should trigger an alert.
+
+What is a threshold?
+A threshold is a number that decides when activity is no longer normal,
+Ecample: 5 failed logins = normal testing
+20 failed logins = possible attack
+
+Why do SIEMs use thresholds?
+Because single events are not enough to prove malicious activity. Patterns matter.
+
+What is an alert?
+An alert is a warning that suspicious behavior may be happening
+
+Difference between event and incident:
+Event is a single log entry while an incident is many related events showing attack behavior.
+
+Script Summary: 
+This script analyzes SSH failed login attempts from auth.log, groups them by IP address, and uses a threshold to decide whether activity is suspicious. If an IP exceeds the threshold, it triggers an alert. Otherwise, it reports the activity as normal. This simulates how a basic SIEM detects potential brute-force attacks. 
+
+Learning Lessons from scipt:
+I learned that Bash variables must be declared on seperate lines or properly seperated. Otherwise, the shell treats them as part of the same command, causing errors like command not found or invalid comparisons.
+
