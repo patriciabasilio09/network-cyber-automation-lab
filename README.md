@@ -67,18 +67,20 @@ labs/
 
 ✔ Day 1 – Introduction to logs and Linux logging system  
 ✔ Day 2 – Log filtering, grep, awk, and pattern matching  
-✔ Day 3 – SSH log analysis and attack detection automation
+✔ Day 3 – SSH log analysis and attack detection automation  
+✔ Day 4 – Log analysis automation & alert detection  
 
 ## Automation
 
 Scripts in this repository are used to automate common networking and troubleshooting tasks.
 - log_analyzer.sh  
-  Analyzes `/var/log/auth.log` to:
-  - Find failed SSH login attempts  
-  - Extract source IPs  
-  - Count and rank the most frequent attackers
-       
-  This simulates basic SIEM-style detection logic.
+  A security-focused Bash script that:
+  - Scans authentication logs for failed SSH login attempts  
+  - Counts attempts per IP address  
+  - Uses a threshold to detect suspicious behavior  
+  - Generates alert or info messages based on activity  
+
+  This script simulates how SIEM systems and intrusion detection rules work.
 
 - network_summary.sh  
   Displays:
@@ -119,6 +121,10 @@ This diagram shows the final architecture built during Phase 1, including:
 - Bash scripting and automation  
 - Git/GitHub workflow (version control, documentation)  
 - Security-focused thinking (detection, validation, and verification)
+- Log analysis and security event detection  
+- Writing threshold-based alerting logic  
+- Understanding authentication logs and attack patterns  
+- Building basic intrusion detection automation  
   
 ## Next Steps
 
