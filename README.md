@@ -69,16 +69,19 @@ labs/
 ✔ Day 2 – Log filtering, grep, awk, and pattern matching  
 ✔ Day 3 – SSH log analysis and attack detection automation  
 ✔ Day 4 – Log analysis automation & alert detection  
+✔ Day 5 – Events vs Alerts, baselines, false positives, and severity levels
+✔ Day 6 – Log analyzer upgraded with severity levels and timestamps
 
 ## Automation
 
 Scripts in this repository are used to automate common networking and troubleshooting tasks.
 - log_analyzer.sh  
   A security-focused Bash script that:
-  - Scans authentication logs for failed SSH login attempts  
-  - Counts attempts per IP address  
-  - Uses a threshold to detect suspicious behavior  
-  - Generates alert or info messages based on activity  
+  - Parses SSH authentication logs
+  - Counts failed login attempts per IP
+  - Assigns severity levels (INFO, LOW, MEDIUM, HIGH)
+  - Adds timestamps to alerts
+  - Mimics basic SIEM-style alert formatting
 
   This script simulates how SIEM systems and intrusion detection rules work.
 
