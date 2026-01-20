@@ -1,0 +1,34 @@
+Phase: 2
+Day: 5
+Topic: Events, Alerts, Baselines, False Positives, Severity
+
+1. What is an event?
+An event is anything that happens on a system and gets logged.
+
+2. What is an Alert?
+An alert is when an event is considered suspicious or dangerous.
+
+3. Difference between Event and Alert:
+Events are raw logs. Alerts are warnings generated when events look suspicious.
+
+4. What is a Baseline?
+A baseline is the normal pattern of behavior for a system or network.
+
+5. Why are baselines important?
+Baselines help identify abnormal behavior by comparing current activity to what is normally expected.
+
+6. What is a False Positives?
+A false positive is when a security alert is triggered by legitimate activity.
+
+7. What is Severity?
+Severity is a level used to prioritize alerts based on how dangerous they are.
+
+8. Examples:
+Low Severity: 2 failed SSH attempts 
+Medium Severity: 50+ failed SSH attempts in a minute
+High Severity: SSH brute force followed by successful login
+
+9. How this applies to my SSH log analyzer:
+My script converts raw SSH failure events into alerts by applying a theshold, which represents a basic baseline and severity rule.
+
+

@@ -1,0 +1,20 @@
+Phase: 2
+Day: 6
+Date: 01/20/2026
+
+Topic: Alert Severity and Script Improvement
+
+1. What is alert severity?
+Severity shows how dangerous or urgent an alert is and helps analysts prioritize threats.
+
+2. Why do we need multiple severity levels?
+Because not all security events are equally dangerous. SOme need immediate action while others are informational.
+
+3. How can thresholds represent severity?
+Higher numbers of failed events usually indicate higher risk, so different count ranges map to different severity levels. 
+
+4. What improvements did I add to my script today?
+I added severity levels, timestamps, and cleaner formatted output that looks like real security alerts.
+
+5. Why timestamps matter in security logs?
+They allow analysts to track when activity happened, correlate events, and understand attack timestamps. 
