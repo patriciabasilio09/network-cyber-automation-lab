@@ -1,0 +1,27 @@
+Phase: 2
+Day: 7
+Date: 01/21/2026
+
+Topic: Event Correlation & SIEM Thinking
+
+1. What is event correlation?
+Event correlation is combining multiple log events to detect patterns that are more meaningful than single events. INstead of reacting to one failed login, correlation looks for repeated failures, timing, success after a failure, or activity across multiple logs.
+
+2. Why is correlation important?
+Single events can be noise or mistakes. Multiple related events indicate real attacks. Correlation reduces false positives and increases detection accuracy.
+
+3. Example:
+- 1 failed login = normal
+- 10 failed logins in 1 minute = suspicious
+- 10 failed logins followed by a success = critical
+
+4. How SIEM systems work:
+Logs -> Rules -> Correlation -> Severity -> Alerts
+My script now acts like a mini SIEM:
+- Reads auth.log
+- Detects patterns 
+- Assigns severity
+- Produces alerts
+
+5. Security mindset shift:
+I am no longer parsing logs now I am detecting behavior. 
