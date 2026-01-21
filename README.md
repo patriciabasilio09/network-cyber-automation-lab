@@ -69,8 +69,9 @@ labs/
 ✔ Day 2 – Log filtering, grep, awk, and pattern matching  
 ✔ Day 3 – SSH log analysis and attack detection automation  
 ✔ Day 4 – Log analysis automation & alert detection  
-✔ Day 5 – Events vs Alerts, baselines, false positives, and severity levels
-✔ Day 6 – Log analyzer upgraded with severity levels and timestamps
+✔ Day 5 – Events vs Alerts, baselines, false positives, and severity levels  
+✔ Day 6 – Log analyzer upgraded with severity levels and timestamps  
+✔ Day 7 – Log correlation and attack pattern analysis  
 
 ## Automation
 
